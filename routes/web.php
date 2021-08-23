@@ -26,5 +26,5 @@ Route::get('/about', function () {
     return view('about',["title" => "About"]);
 });
 
-Route::get('/posts/{slug}', [PostController::class,'show']);
+Route::get('/posts/{post:slug}', [PostController::class,'show']);
 
