@@ -7,7 +7,7 @@
             {{ $post->title }}
         </h2>
 
-        <p>By . William Felix in <a href="/categories /{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
+        <p>By . William Felix in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
         {!! $post->body !!}
     </article>
 </article>
