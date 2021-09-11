@@ -11,6 +11,7 @@
 
         <p>{{ $item->excerpt }}</p>
 
+
         <a href="/posts/{{ $item->slug }}" class="text-decoration-none">Read More...</a>
     </article>
 @endforeach
