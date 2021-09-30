@@ -19,13 +19,19 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', function () {
-    return view('home', ["title" => "Home"]);
+    return view('home', [
+        "title" => "Home", 
+        "active" =>'home'
+    ]);
 });
 
 Route::get('/posts', [PostController::class, 'index']);
 
 Route::get('/about', function () {
-    return view('about', ["title" => "About"]);
+    return view('about', [
+        "title" => "About",
+        "active" => "About"
+    ]);
 });
 
 Route::get('/posts/{post:slug}', [PostController::class, 'show']);
